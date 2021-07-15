@@ -11,7 +11,7 @@ const Profile = require("./Navigators/Profile");
 const Image = require("./Navigators/Image");
 
 
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 
 const db = knex({
   client: "pg",
@@ -59,8 +59,8 @@ app.post("/imageurl", (req, res) => {
   Image.handleAPI(req, res);
 });
 
-app.listen(PORT || 3000, () => {
-  console.log(`app is running on port ${PORT}`);
+app.listen(port || 3000, () => {
+  console.log(`app is running on port ${port}`);
 });
 
 // console.log(PORT);
