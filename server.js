@@ -17,7 +17,7 @@ const db = knex({
   client: "pg",
   version: "12.7",
   connection: {
-    host: "127.0.0.1",
+    host: "postgresql-crystalline-10209",
     user: "postgres",
     password: "Lokeshsql_08@",
     database: "smartbrain",
