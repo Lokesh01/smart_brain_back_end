@@ -10,17 +10,14 @@ const Signin = require("./Navigators/Signin");
 const Profile = require("./Navigators/Profile");
 const Image = require("./Navigators/Image");
 
-
 const port = process.env.PORT || 3000;
 
 const db = knex({
   client: "pg",
-  version: "12.7",
+  version: 13.3,
   connection: {
-    host: "postgresql-crystalline-10209",
-    user: "postgres",
-    password: "Lokeshsql_08@",
-    database: "smartbrain",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
@@ -64,7 +61,6 @@ app.listen(port, () => {
 });
 
 // console.log(PORT);
-
 
 /*
 /-->res = this is working
