@@ -70,3 +70,6 @@ app.listen(port, () => {
 /profile/:userid --> GET = user
 /image --> PUT -->user
 */
+
+
+//deployed on https://smart-brain-08.herokuapp.com/
